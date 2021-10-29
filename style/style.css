@@ -30,7 +30,7 @@ body {
   top: 0;
 }
 
-.container > div {
+.container>div {
   position: absolute;
   left: 0;
   right: 0;
@@ -41,7 +41,7 @@ body {
   font-size: 4.5rem;
 }
 
-.one > img {
+.one>img {
   vertical-align: middle;
   margin-bottom: 10px;
   max-width: 100%;
@@ -296,4 +296,81 @@ body {
     font-size: 1.5rem;
     font-weight: lighter;
   }
+}
+
+.modalx {
+  position: fixed;
+  z-index: 2000;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: translateY(0)
+}
+
+.overlayy {
+  background-color: #000;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  top: 0;
+  opacity: .5;
+  left: 0;
+}
+
+.content-modalx {
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 2002;
+  top: 140px;
+  color: #fff;
+  left: 0;
+}
+
+.info_modalx {
+  width: 100%;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info_modalx>div {
+  width: 100%;
+  text-align: center;
+  height: auto;
+}
+
+.nama-ultah {
+  font-family: "Work Sans", sans-serif;
+  font-size: 50px;
+}
+
+.wdp-dear {
+  font-family: "Work Sans", sans-serif;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.wdp-button-wrapper {
+  margin-top: 100px;
+}
+
+.elementor-button {
+  display: inline-block;
+  padding: 10px;
+  background-color: #66727a;
+  font-size: 15px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  color: white;
+  text-align: center;
 }
